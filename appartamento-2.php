@@ -40,16 +40,122 @@ include 'includes/header.php';
                 <li>✓ Lavatrice</li>
             </ul>
 
-            <h3 style="color: var(--primary); margin-bottom: 20px;">Galleria</h3>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <img src="assets/img/piobbico_piscina.jpg" alt="Piscina"
-                    style="width: 100%; border-radius: 5px; height: 150px; object-fit: cover;">
-                <img src="assets/img/hero_monte_nerone.jpg" alt="Vista"
-                    style="width: 100%; border-radius: 5px; height: 150px; object-fit: cover;">
-                <!-- Placeholders -->
-                <div style="background: #eee; height: 150px; border-radius: 5px;"></div>
-                <div style="background: #eee; height: 150px; border-radius: 5px;"></div>
+            <?php
+            $galleryData = [
+                'salotto' => [
+                    'title' => 'Salotto',
+                    'amenities' => ['Riscaldamento', 'TV', 'Acqua calda', 'Caffè', 'Calici da vino', 'Cucina', 'Cucinino', 'Essenziali', 'Estintore', 'Fornelli', 'Forno', 'Freezer', 'Frigorifero', 'Ingresso privato', 'Macchina del caffè', 'Piatti e posate', 'Servizi di base per cucinare', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Tavolo da pranzo', 'Wi-fi', 'Rilevatore di monossido di carbonio', 'Asciugacapelli', 'Cuscini e coperte extra', 'Grucce'],
+                    'images' => ['salotto_1.avif', 'salotto_2.avif', 'salotto_3.avif']
+                ],
+                'zona_pranzo' => [
+                    'title' => 'Zona Pranzo',
+                    'amenities' => ['Calici da vino', 'Riscaldamento', 'Tavolo da pranzo', 'Acqua calda', 'Arredi da esterni', 'Cucinino', 'Cucina', 'Estintore', 'Fornelli', 'Forno', 'Freezer', 'Frigorifero', 'Ingresso privato', 'Piatti e posate', 'Rilevatore di monossido di carbonio', 'Servizi di base per cucinare', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'TV', 'Wi-fi', 'Essenziali', 'Macchina del caffè', 'Prodotti per la pulizia'],
+                    'images' => ['zona_pranzo_1.avif', 'zona_pranzo_2.jpeg', 'zona_pranzo_3.avif']
+                ],
+                'camera_1' => [
+                    'title' => 'Camera da Letto 1',
+                    'amenities' => ['Letto a 2 piazze', 'Biancheria da letto', 'Cuscini e coperte extra', 'Essenziali', 'Grucce', 'Riscaldamento', 'Arredi da esterni', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Wi-fi', 'Spazio per conservare l\'abbigliamento'],
+                    'images' => ['camera_da_letto_1.jpeg', 'camera_da_letto_1_2.jpeg', 'camera_da_letto_1_3.jpeg']
+                ],
+                'camera_2' => [
+                    'title' => 'Camera da Letto 2',
+                    'amenities' => ['Letto singolo', 'Biancheria da letto', 'Cuscini e coperte extra', 'Riscaldamento', 'Grucce', 'Wi-fi', 'Spazio per conservare l\'abbigliamento', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Parcheggio gratuito nella proprietà'],
+                    'images' => ['camera_da_letto_2.avif', 'camera_da_letto_2_2.avif', 'camera_da_letto_2_3.avif']
+                ],
+                'bagno' => [
+                    'title' => 'Bagno Completo',
+                    'amenities' => ['Acqua calda', 'Asciugacapelli', 'Gel doccia', 'Bidet', 'Prodotti per la pulizia', 'Riscaldamento', 'Essenziali', 'Lavatrice', 'Sapone per il corpo', 'Shampoo', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Wi-fi'],
+                    'images' => ['bagno_completo_1.jpeg', 'bagno_completo_2.jpeg', 'bagno_completo_3.avif']
+                ],
+                'cortile' => [
+                    'title' => 'Cortile',
+                    'amenities' => ['Doccia all\'aperto', 'Zona pranzo all\'aperto', 'Lettini prendisole', 'Braciere', 'Parcheggio gratuito nella proprietà', 'Piscina', 'Sono permessi soggiorni a lungo termine'],
+                    'images' => ['cortile.avif', 'cortile_2.avif']
+                ],
+                'esterni' => [
+                    'title' => 'Esterni',
+                    'amenities' => ['Parcheggio gratuito nella proprietà', 'Sono permessi soggiorni a lungo termine', 'Piscina', 'Lettini prendisole', 'Doccia all\'aperto'],
+                    'images' => ['esterni.avif', 'esterni_2.webp', 'esterni_3.avif', 'esterni_4.avif', 'esterni_5.jpeg', 'esterni_6.jpeg']
+                ]
+            ];
+            ?>
+
+            <h3 style="color: var(--primary); margin-bottom: 20px;">Galleria Fotografica</h3>
+
+            <!-- Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" onclick="filterGallery('all', this)">Tutto</button>
+                <?php foreach ($galleryData as $id => $data): ?>
+                    <button class="filter-btn"
+                        onclick="filterGallery('<?php echo $id; ?>', this)"><?php echo $data['title']; ?></button>
+                <?php endforeach; ?>
             </div>
+
+            <!-- Descriptions -->
+            <div id="gallery-descriptions">
+                <?php foreach ($galleryData as $id => $data): ?>
+                    <div class="gallery-description" id="desc-<?php echo $id; ?>">
+                        <h4 style="margin-bottom: 15px; color: var(--accent);"><?php echo $data['title']; ?> - Servizi</h4>
+                        <ul style="column-count: 2; column-gap: 40px; font-size: 0.95rem; color: var(--text-muted);">
+                            <?php foreach ($data['amenities'] as $amenity): ?>
+                                <li style="margin-bottom: 5px;">• <?php echo $amenity; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="gallery-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <?php foreach ($galleryData as $id => $data): ?>
+                    <?php foreach ($data['images'] as $img): ?>
+                        <img src="assets/img/Oasi di Piobbico/<?php echo $img; ?>" alt="<?php echo $data['title']; ?>"
+                            class="gallery-item show" data-category="<?php echo $id; ?>"
+                            style="width: 100%; border-radius: 5px; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"
+                            onclick="openLightbox(this.src)">
+                    <?php endforeach; ?>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Simple Lightbox Script -->
+            <div id="lightbox"
+                style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center; cursor: pointer;"
+                onclick="this.style.display='none'">
+                <img id="lightbox-img" src=""
+                    style="max-width: 90%; max-height: 90%; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+            </div>
+
+            <script>
+                function filterGallery(category, btn) {
+                    // Update buttons
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Filter images
+                    const images = document.querySelectorAll('.gallery-item');
+                    images.forEach(img => {
+                        if (category === 'all' || img.getAttribute('data-category') === category) {
+                            img.classList.add('show');
+                        } else {
+                            img.classList.remove('show');
+                        }
+                    });
+
+                    // Update description
+                    document.querySelectorAll('.gallery-description').forEach(d => d.classList.remove('active'));
+                    if (category !== 'all') {
+                        const desc = document.getElementById('desc-' + category);
+                        if (desc) desc.classList.add('active');
+                    }
+                }
+
+                function openLightbox(src) {
+                    document.getElementById('lightbox-img').src = src;
+                    document.getElementById('lightbox').style.display = 'flex';
+                }
+            </script>
         </div>
 
         <!-- Sidebar / Booking -->
