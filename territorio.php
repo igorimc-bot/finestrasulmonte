@@ -6,7 +6,7 @@ include 'includes/header.php';
 
 <main>
     <section class="hero-small"
-        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('assets/img/hero_monte_nerone.jpg?v=2') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/img/monte_nerone.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
         <div class="reveal">
             <h1 style="font-size: 3rem;">Scopri il Monte Nerone</h1>
             <p style="font-size: 1.2rem; font-weight: 300;">Un paradiso per gli amanti della natura e dello sport</p>
