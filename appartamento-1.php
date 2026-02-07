@@ -118,23 +118,29 @@ include 'includes/header.php';
                 <?php endforeach; ?>
             </div>
 
-            <!-- Simple Lightbox Script -->
-            <div id="lightbox"
-                style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; align-items: center; justify-content: center; cursor: pointer;"
-                onclick="this.style.display='none'">
-                <img id="lightbox-img" src=""
-                    style="max-width: 90%; max-height: 90%; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+            <!-- Enhanced Lightbox -->
+            <div id="lightbox" onclick="if(event.target === this) closeLightbox()">
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+                <img id="lightbox-img" src="">
+                <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</button>
             </div>
 
             <script>
+                let currentCategory = 'all';
+                let currentImages = [];
+                let currentIndex = 0;
+
                 function filterGallery(category, btn) {
+                    currentCategory = category;
+
                     // Update buttons
                     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
 
                     // Filter images
-                    const images = document.querySelectorAll('.gallery-item');
-                    images.forEach(img => {
+                    const allImages = document.querySelectorAll('.gallery-item');
+                    allImages.forEach(img => {
                         if (category === 'all' || img.getAttribute('data-category') === category) {
                             img.classList.add('show');
                         } else {
@@ -151,9 +157,53 @@ include 'includes/header.php';
                 }
 
                 function openLightbox(src) {
-                    document.getElementById('lightbox-img').src = src;
-                    document.getElementById('lightbox').style.display = 'flex';
+                    const lightbox = document.getElementById('lightbox');
+                    const img = document.getElementById('lightbox-img');
+
+                    // Get currently visible images
+                    const selector = currentCategory === 'all' ? '.gallery-item' : `.gallery-item[data-category="${currentCategory}"]`;
+                    currentImages = Array.from(document.querySelectorAll(selector));
+
+                    // Find index of clicked image
+                    currentIndex = currentImages.findIndex(image => image.src === src);
+
+                    // Show lightbox
+                    img.src = src;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
                 }
+
+                function closeLightbox() {
+                    const lightbox = document.getElementById('lightbox');
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+
+                function changeImage(direction) {
+                    currentIndex += direction;
+
+                    // Loop
+                    if (currentIndex >= currentImages.length) currentIndex = 0;
+                    if (currentIndex < 0) currentIndex = currentImages.length - 1;
+
+                    const img = document.getElementById('lightbox-img');
+
+                    // Small fade effect for image transition
+                    img.style.opacity = '0';
+                    setTimeout(() => {
+                        img.src = currentImages[currentIndex].src;
+                        img.onload = () => { img.style.opacity = '1'; };
+                    }, 200);
+                }
+
+                // Keyboard navigation
+                document.addEventListener('keydown', function (e) {
+                    if (!document.getElementById('lightbox').classList.contains('active')) return;
+
+                    if (e.key === 'Escape') closeLightbox();
+                    if (e.key === 'ArrowLeft') changeImage(-1);
+                    if (e.key === 'ArrowRight') changeImage(1);
+                });
             </script>
         </div>
 
