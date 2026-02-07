@@ -192,8 +192,8 @@ include 'includes/header.php';
                     // Small fade effect for image transition
                     img.style.opacity = '0';
                     setTimeout(() => {
-                        img.src = currentImages[currentIndex].src;
                         img.onload = () => { img.style.opacity = '1'; };
+                        img.src = currentImages[currentIndex].src;
                     }, 200);
                 }
 
