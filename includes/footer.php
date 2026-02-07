@@ -22,7 +22,8 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; <?php echo date("Y"); ?> Finestra sul monte. Tutti i diritti riservati.</p>
+        <p>&copy; <?php echo date("Y"); ?> Finestra sul monte. Tutti i diritti riservati. <span
+                style="font-size: 0.7rem; opacity: 0.5;">v.<?php echo date("Ymd.His"); ?></span></p>
     </div>
 </footer>
 
