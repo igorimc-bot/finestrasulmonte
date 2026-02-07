@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -37,8 +37,10 @@
                 <li><a href="territorio.php" <?php if ($currentPage == 'territorio')
                     echo 'class="active"'; ?>>Territorio</a></li>
                 <li><a href="contatti.php" <?php if ($currentPage == 'contatti')
-                    echo 'class="active"'; ?>>Contatti</a></li>
-                <li><a href="contatti.php" class="btn-cta" style="padding: 10px 20px; color: white !important;">Prenota</a></li>
+                    echo 'class="active"'; ?>>Contatti</a>
+                </li>
+                <li><a href="contatti.php" class="btn-cta"
+                        style="padding: 10px 20px; color: white !important;">Prenota</a></li>
             </ul>
             <div class="mobile-toggle">
                 <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
