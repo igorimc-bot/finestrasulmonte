@@ -42,7 +42,7 @@ include 'includes/header.php';
 
             <h3 style="color: var(--primary); margin-bottom: 20px;">Galleria</h3>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                <img src="assets/img/app1_preview.jpg" alt="Piscina"
+                <img src="assets/img/piobbico_piscina.jpg" alt="Piscina"
                     style="width: 100%; border-radius: 5px; height: 150px; object-fit: cover;">
                 <img src="assets/img/hero_monte_nerone.jpg" alt="Vista"
                     style="width: 100%; border-radius: 5px; height: 150px; object-fit: cover;">
