@@ -54,13 +54,8 @@ include 'includes/header.php';
                 </div>
             </div>
             <div class="intro-img" style="position: relative;">
-                <!-- Placeholder image for now -->
-                <div
-                    style="width: 100%; height: 400px; background-color: #eee; display: flex; align-items: center; justify-content: center; color: #aaa; border-radius: 5px; box-shadow: 20px 20px 0 var(--accent);">
-                    <img src="assets/img/intro_view.jpg" alt="Vista Monte Nerone"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px; display: block;"
-                        onerror="this.style.display='none'; this.parentNode.innerText='Vista Monte Nerone (Immagine mancante)'">
-                </div>
+                <img src="assets/img/monte_nerone.jpg" alt="Vista Monte Nerone"
+                    style="width: 100%; height: 400px; object-fit: cover; border-radius: 5px; box-shadow: 20px 20px 0 var(--accent); display: block;">
             </div>
         </div>
     </section>
