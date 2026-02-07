@@ -80,7 +80,7 @@ include 'includes/header.php';
                 <div class="reveal"
                     style="background: var(--bg-light); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                     <div style="height: 250px; background-color: #ddd;">
-                        <img src="assets/img/app1_preview.jpg" alt="Appartamento 1"
+                        <img src="assets/img/residence_vista_piscina.jpg" alt="Appartamento 1"
                             style="width: 100%; height: 100%; object-fit: cover;"
                             onerror="this.src='https://placehold.co/600x400?text=Appartamento+1'">
                     </div>
@@ -103,7 +103,7 @@ include 'includes/header.php';
                 <div class="reveal"
                     style="background: var(--bg-light); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition-delay: 0.2s;">
                     <div style="height: 250px; background-color: #ddd;">
-                        <img src="assets/img/app2_preview.jpg" alt="Appartamento 2"
+                        <img src="assets/img/piobbico_piscina.jpg" alt="Appartamento 2"
                             style="width: 100%; height: 100%; object-fit: cover;"
                             onerror="this.src='https://placehold.co/600x400?text=Appartamento+2'">
                     </div>
