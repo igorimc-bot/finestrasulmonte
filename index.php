@@ -7,7 +7,7 @@ include 'includes/header.php';
 <main>
     <!-- Hero Section -->
     <section class="hero"
-        style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url('assets/img/hero_monte_nerone.jpg') center/cover no-repeat; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('assets/img/hero_homepage.jpg') center/cover no-repeat; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
         <div class="hero-content reveal">
             <h1 style="font-size: clamp(3rem, 10vw, 5rem); margin-bottom: 20px;">Finestra sul Monte</h1>
             <p style="font-size: 1.2rem; font-weight: 300; max-width: 600px; margin: 0 auto 40px; font-style: italic;">
