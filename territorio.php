@@ -133,6 +133,42 @@ include 'includes/header.php';
                     </div>
                 </div>
             </div>
+
+            <!-- Activity 4 -->
+            <div class="reveal overflow-hidden"
+                style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.3s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+                <div style="height: 200px; overflow: hidden;">
+                    <img src="assets/img/enogastronomia.jpg" alt="Enogastronomia Piobbico"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="margin-bottom: 15px; color: var(--primary);">Enogastronomia</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 15px;">
+                        I sapori autentici dell'Alta Valle del Metauro. Da non perdere:
+                    </p>
+                    <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 8px;">• <strong>Sagra del Polentone</strong>: Un rito storico dei
+                            carbonari.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Polenta alla Carbonara</strong>: Cucinata in grandi
+                            paioli.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Tartufo Bianco</strong>: Pregiato tesoro dei nostri
+                            boschi.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Club dei Brutti</strong>: Divertimento e folklore
+                            unico.
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
+                        <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
+                        <a href="https://www.neronexperience.it/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; margin-right: 15px; text-decoration: none; font-weight: 500;">Nerone
+                            Experience &rarr;</a>
+                        <a href="http://www.castellobrancaleoni.it/sagra-del-polentone/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; text-decoration: none; font-weight: 500;">Sagra
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
