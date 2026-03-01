@@ -177,8 +177,10 @@ include 'includes/header.php';
                         <a href="https://www.neronexperience.it/" target="_blank"
                             style="color: var(--accent); font-size: 0.9rem; margin-right: 15px; text-decoration: none; font-weight: 500;">Nerone
                             Experience &rarr;</a>
-                        <a href="http://www.castellobrancaleoni.it/sagra-del-polentone/" target="_blank"
+                        <a href="https://www.piobbicowelcome.it/eventi/sagra-nazionale-del-polentone-alla-carbonara/"
+                            target="_blank"
                             style="color: var(--accent); font-size: 0.9rem; text-decoration: none; font-weight: 500;">Sagra
+                            del polentone alla carbonara
                             &rarr;</a>
                     </div>
                 </div>
