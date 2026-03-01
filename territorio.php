@@ -23,82 +23,114 @@ include 'includes/header.php';
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
             <!-- Activity 1 -->
-            <div class="reveal"
-                style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                <span style="font-size: 3rem; display: block; margin-bottom: 20px;">🚵</span>
-                <h3 style="margin-bottom: 15px; color: var(--primary);">Ciclismo e MTB</h3>
-                <p style="color: var(--text-muted); margin-bottom: 15px;">
-                    Il Monte Nerone è una meta leggendaria, tappa del <strong>Giro d'Italia Women 2025</strong>. Sfida
-                    te stesso con:
-                </p>
-                <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
-                    <li style="margin-bottom: 8px;">• <strong>Brevetto del Nerone</strong>: Scalata dei 3 versanti in un
-                        giorno.</li>
-                    <li style="margin-bottom: 8px;">• <strong>Ascesa da Piobbico</strong>: 14km al 9% medio.</li>
-                    <li style="margin-bottom: 8px;">• <strong>Bike Park</strong>: Percorsi Downhill ed Enduro.</li>
-                    <li style="margin-bottom: 8px;">• <strong>Cicloturismo</strong>: Itinerari panoramici per tutti.
-                    </li>
-                </ul>
-                <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
-                    <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
-                    <a href="https://www.marcheoutdoor.it/" target="_blank"
-                        style="color: var(--accent); font-size: 0.9rem; margin-right: 10px;">Marche Outdoor &rarr;</a>
-                    <a href="https://www.komoot.com/guide/45317/cycling-around-monte-nerone" target="_blank"
-                        style="color: var(--accent); font-size: 0.9rem;">Komoot &rarr;</a>
+            <div class="reveal overflow-hidden"
+                style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column; transition: transform 0.3s ease;">
+                <div style="height: 200px; overflow: hidden;">
+                    <img src="assets/img/ciclismo.png" alt="Ciclismo sul Monte Nerone"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="margin-bottom: 15px; color: var(--primary);">Ciclismo e MTB</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 15px;">
+                        Il Monte Nerone è una meta leggendaria, tappa del <strong>Giro d'Italia Women 2025</strong>.
+                        Sfida
+                        te stesso con:
+                    </p>
+                    <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 8px;">• <strong>Brevetto del Nerone</strong>: Scalata dei 3 versanti
+                            in un
+                            giorno.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Ascesa da Piobbico</strong>: 14km al 9% medio.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Bike Park</strong>: Percorsi Downhill ed Enduro.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Cicloturismo</strong>: Itinerari panoramici per tutti.
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
+                        <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
+                        <a href="https://www.marcheoutdoor.it/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; margin-right: 15px; text-decoration: none; font-weight: 500;">Marche
+                            Outdoor &rarr;</a>
+                        <a href="https://www.komoot.com/guide/45317/cycling-around-monte-nerone" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; text-decoration: none; font-weight: 500;">Komoot
+                            &rarr;</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Activity 2 -->
-            <div class="reveal"
-                style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition-delay: 0.1s; display: flex; flex-direction: column;">
-                <span style="font-size: 3rem; display: block; margin-bottom: 20px;">🥾</span>
-                <h3 style="margin-bottom: 15px; color: var(--primary);">Trekking e Natura</h3>
-                <p style="color: var(--text-muted); margin-bottom: 15px;">
-                    Un paradiso escursionistico con decine di sentieri CAI. Da non perdere:
-                </p>
-                <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
-                    <li style="margin-bottom: 8px;">• <strong>Arco di Fondarca</strong>: Un anfiteatro naturale
-                        nascosto.</li>
-                    <li style="margin-bottom: 8px;">• <strong>Grotta di Nerone</strong>: Suggestiva cavità visitabile.
-                    </li>
-                    <li style="margin-bottom: 8px;">• <strong>Vetta (1525m)</strong>: Vista mozzafiato sugli Appennini.
-                    </li>
-                    <li style="margin-bottom: 8px;">• <strong>Sentiero Italia</strong>: Tappe CAI ben segnalate.</li>
-                </ul>
-                <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
-                    <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
-                    <a href="https://www.pesarotrekking.it/" target="_blank"
-                        style="color: var(--accent); font-size: 0.9rem; margin-right: 10px;">Pesaro Trekking &rarr;</a>
-                    <a href="https://www.appennino.tv/" target="_blank"
-                        style="color: var(--accent); font-size: 0.9rem;">Appennino.tv &rarr;</a>
+            <div class="reveal overflow-hidden"
+                style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.1s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+                <div style="height: 200px; overflow: hidden;">
+                    <img src="assets/img/trekking.png" alt="Trekking sul Monte Nerone"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="margin-bottom: 15px; color: var(--primary);">Trekking e Natura</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 15px;">
+                        Un paradiso escursionistico con decine di sentieri CAI. Da non perdere:
+                    </p>
+                    <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 8px;">• <strong>Arco di Fondarca</strong>: Un anfiteatro naturale
+                            nascosto.</li>
+                        <li style="margin-bottom: 8px;">• <strong>Grotta di Nerone</strong>: Suggestiva cavità
+                            visitabile.
+                        </li>
+                        <li style="margin-bottom: 8px;">• <strong>Vetta (1525m)</strong>: Vista mozzafiato sugli
+                            Appennini.
+                        </li>
+                        <li style="margin-bottom: 8px;">• <strong>Sentiero Italia</strong>: Tappe CAI ben segnalate.
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
+                        <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
+                        <a href="https://www.pesarotrekking.it/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; margin-right: 15px; text-decoration: none; font-weight: 500;">Pesaro
+                            Trekking &rarr;</a>
+                        <a href="https://www.appennino.tv/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; text-decoration: none; font-weight: 500;">Appennino.tv
+                            &rarr;</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Activity 3 -->
-            <div class="reveal"
-                style="background: var(--white); padding: 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition-delay: 0.2s; display: flex; flex-direction: column;">
-                <span style="font-size: 3rem; display: block; margin-bottom: 20px;">🏰</span>
-                <h3 style="margin-bottom: 15px; color: var(--primary);">Cultura e Borghi</h3>
-                <p style="color: var(--text-muted); margin-bottom: 15px;">
-                    Arte e storia a pochi minuti di distanza. Luoghi unici da visitare:
-                </p>
-                <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
-                    <li style="margin-bottom: 8px;">• <strong>Castello Brancaleoni</strong>: Proprio qui a Piobbico.
-                    </li>
-                    <li style="margin-bottom: 8px;">• <strong>Urbino (UNESCO)</strong>: Palazzo Ducale e Raffaello.</li>
-                    <li style="margin-bottom: 8px;">• <strong>Urbania</strong>: La Chiesa dei Morti e le ceramiche.</li>
-                    <li style="margin-bottom: 8px;">• <strong>Gubbio</strong>: La città di pietra più bella d'Italia.
-                    </li>
-                </ul>
-                <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
-                    <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
-                    <a href="http://www.castellobrancaleoni.it/" target="_blank"
-                        style="color: var(--accent); font-size: 0.9rem; margin-right: 10px;">Castello Brancaleoni
-                        &rarr;</a>
-                    <a href="http://www.gallerianazionalemarche.it/" target="_blank"
-                        style="color: var(--accent); font-size: 0.9rem;">Galleria Marche &rarr;</a>
+            <div class="reveal overflow-hidden"
+                style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.2s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+                <div style="height: 200px; overflow: hidden;">
+                    <img src="assets/img/cultura.png" alt="Castello Brancaleoni Piobbico"
+                        style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                        onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div style="padding: 30px;">
+                    <h3 style="margin-bottom: 15px; color: var(--primary);">Cultura e Borghi</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 15px;">
+                        Arte e storia a pochi minuti di distanza. Luoghi unici da visitare:
+                    </p>
+                    <ul style="margin-bottom: 20px; color: var(--text-muted); list-style-type: none; padding-left: 0;">
+                        <li style="margin-bottom: 8px;">• <strong>Castello Brancaleoni</strong>: Proprio qui a Piobbico.
+                        </li>
+                        <li style="margin-bottom: 8px;">• <strong>Urbino (UNESCO)</strong>: Palazzo Ducale e Raffaello.
+                        </li>
+                        <li style="margin-bottom: 8px;">• <strong>Urbania</strong>: La Chiesa dei Morti e le ceramiche.
+                        </li>
+                        <li style="margin-bottom: 8px;">• <strong>Gubbio</strong>: La città di pietra più bella
+                            d'Italia.
+                        </li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid #eee;">
+                        <p style="font-size: 0.9rem; font-weight: bold; margin-bottom: 5px;">Per approfondire:</p>
+                        <a href="http://www.castellobrancaleoni.it/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; margin-right: 15px; text-decoration: none; font-weight: 500;">Castello
+                            Brancaleoni
+                            &rarr;</a>
+                        <a href="http://www.gallerianazionalemarche.it/" target="_blank"
+                            style="color: var(--accent); font-size: 0.9rem; text-decoration: none; font-weight: 500;">Galleria
+                            Marche &rarr;</a>
+                    </div>
                 </div>
             </div>
         </div>
