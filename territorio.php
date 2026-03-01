@@ -28,7 +28,7 @@ include 'includes/header.php';
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
-                    <img src="assets/img/ciclismo.png" alt="Ciclismo sul Monte Nerone"
+                    <img src="assets/img/ciclismo.jpg" alt="Ciclismo sul Monte Nerone"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
@@ -64,7 +64,7 @@ include 'includes/header.php';
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.1s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
-                    <img src="assets/img/trekking.png" alt="Trekking sul Monte Nerone"
+                    <img src="assets/img/monte nerone balza forata.jpg" alt="Trekking sul Monte Nerone"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
@@ -101,7 +101,7 @@ include 'includes/header.php';
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.2s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
-                    <img src="assets/img/cultura.png" alt="Castello Brancaleoni Piobbico"
+                    <img src="assets/img/Castello_Brancaleoni_Piobbico.jpg" alt="Castello Brancaleoni Piobbico"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
