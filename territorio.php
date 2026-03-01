@@ -13,6 +13,20 @@ include 'includes/header.php';
         </div>
     </section>
 
+    <style>
+        .activities-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 992px) {
+            .activities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+
     <section class="container" style="padding: 80px 0;">
         <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto 60px;">
             <h2 style="color: var(--primary); margin-bottom: 20px;">Piobbico e le sue Meraviglie</h2>
@@ -23,7 +37,7 @@ include 'includes/header.php';
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
+        <div class="activities-grid">
             <!-- Activity 1 -->
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column; transition: transform 0.3s ease;">
