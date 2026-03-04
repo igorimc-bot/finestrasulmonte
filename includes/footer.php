@@ -22,7 +22,13 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; <?php echo date("Y"); ?> Finestra sul monte. Tutti i diritti riservati.</p>
+        <p>
+            &copy; <?php echo date("Y"); ?> Finestra sul monte. Tutti i diritti riservati. |
+            <a href="termini-uso.php" style="text-decoration: underline;">Termini d'Uso</a> |
+            <a href="cookie-policy.php" style="text-decoration: underline;">Cookie Policy</a> |
+            <a href="#" onclick="document.getElementById('cookie-modal').style.display='flex'; return false;"
+                style="text-decoration: underline;">Preferenze Cookie</a>
+        </p>
     </div>
 </footer>
 
