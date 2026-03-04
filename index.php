@@ -109,7 +109,7 @@ include 'includes/header.php';
                             base per esplorare il territorio.
                         </p>
                         <ul style="margin-bottom: 30px; font-size: 0.9rem; color: var(--text-muted);">
-                            <li>✓ Piscina Privata</li>
+                            <li>✓ Piscina</li>
                             <li>✓ Ampio Giardino</li>
                             <li>✓ Cucina Attrezzata</li>
                         </ul>
