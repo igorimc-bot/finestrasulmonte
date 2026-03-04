@@ -33,7 +33,7 @@ include 'includes/header.php';
                 </div>
                 <div style="margin-bottom: 20px;">
                     <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 5px;">Email</h3>
-                    <p><a href="mailto:info@finestrasulmonte.it">info@finestrasulmonte.it</a></p>
+                    <p><a href="mailto:info@oasidipiobbico.it">info@oasidipiobbico.it</a></p>
                 </div>
             </div>
 
