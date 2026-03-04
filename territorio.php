@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Territorio e Attività - Oasi di Piobbico";
-$pageKeywords = "Monte Nerone, trekking Marche, ciclismo Monte Nerone, escursioni Piobbico, Castello Brancaleoni, enogastronomia Marche, tartufo bianco";
+$pageTitle = "Esplora il Monte Nerone - Attività e Territorio | Oasi di Piobbico";
+$pageDescription = "Vivi l'avventura sul Monte Nerone. Escursioni, ciclismo d'eccellenza, trekking e borghi medievali: scopri tutto quello che puoi fare soggiornando a Piobbico.";
+$pageKeywords = "attività Monte Nerone, trekking Marche, cicloturismo Marche, Piobbico cosa vedere, Castello Brancaleoni, outdoor Marche";
 $currentPage = "territorio";
 include 'includes/header.php';
 ?>

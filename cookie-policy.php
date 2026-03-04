@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Cookie Policy - Oasi di Piobbico";
-$pageKeywords = "cookie policy Oasi di Piobbico, informativa cookie, privacy, sito web appartamenti";
+$pageTitle = "Informativa sui Cookie - Trasparenza Oasi di Piobbico";
+$pageDescription = "Leggi l'informativa sui cookie dell'Oasi di Piobbico. Scopri come utilizziamo i cookie per migliorare la tua esperienza di navigazione e come gestirli.";
+$pageKeywords = "cookie policy, privacy Marche, gestione cookie, Oasi di Piobbico trasparenza, normativa cookie";
 $currentPage = "cookie-policy";
 include 'includes/header.php';
 ?>

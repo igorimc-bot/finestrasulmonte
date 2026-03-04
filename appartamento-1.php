@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Appartamento Vista Monte Nerone - Oasi di Piobbico";
-$pageKeywords = "residence con vista, appartamento vacanze Monte Nerone, affitto appartamento Piobbico, casa vacanze con piscina, relax Marche";
+$pageTitle = "Residence con Vista - Suite Esclusiva sul Monte Nerone";
+$pageDescription = "Un nido d'amore o un rifugio per famiglie: soggiorna nel nostro Residence con Vista. Terrazza panoramica, piscina e tutti i comfort moderni a Piobbico.";
+$pageKeywords = "residence con vista Piobbico, suite Monte Nerone, casa vacanze panoramica, alloggio lusso Marche, vacanze relax";
 $currentPage = "appartamenti";
 include 'includes/header.php';
 ?>

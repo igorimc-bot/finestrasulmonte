@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Termini d'Uso - Oasi di Piobbico";
-$pageKeywords = "termini d'uso Oasi di Piobbico, condizioni generali, regole sito web, affitto casa vacanze";
+$pageTitle = "Termini e Condizioni d'Uso - Oasi di Piobbico";
+$pageDescription = "Consulta i termini d'uso del sito web Oasi di Piobbico. Regole, licenze e limitazioni di responsabilità per l'utilizzo dei nostri contenuti e servizi.";
+$pageKeywords = "termini d'uso casa vacanze, condizioni generali Oasi di Piobbico, legal note Piobbico, regole sito web";
 $currentPage = "termini-uso";
 include 'includes/header.php';
 ?>

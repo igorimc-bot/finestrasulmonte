@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Contatti - Oasi di Piobbico";
-$pageKeywords = "contatti Oasi di Piobbico, informazioni vacanze Piobbico, prenota appartamento Monte Nerone, telefono, email";
+$pageTitle = "Prenota la tua Vacanza - Contatti Oasi di Piobbico";
+$pageDescription = "Hai domande o vuoi prenotare? Contatta l'Oasi di Piobbico per ricevere un preventivo personalizzato e iniziare a pianificare il tuo soggiorno ai piedi del Monte Nerone.";
+$pageKeywords = "prenotazioni Oasi di Piobbico, contatti appartamenti Piobbico, assistenza clienti, vacanze Marche informazioni";
 $currentPage = "contatti";
 include 'includes/header.php';
 ?>

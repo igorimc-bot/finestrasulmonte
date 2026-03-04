@@ -1,6 +1,7 @@
 <?php
-$pageTitle = "Oasi di Piobbico";
-$pageKeywords = "appartamento Oasi di Piobbico, appartamento con giardino, vacanze in famiglia Marche, piscina Monte Nerone, affitto vacanze Piobbico";
+$pageTitle = "Appartamento Oasi di Piobbico - Spazio e Privacy in Famiglia";
+$pageDescription = "Vivi l'Oasi di Piobbico: un appartamento ampio con giardino privato e piscina. La scelta perfetta per gruppi e famiglie che amano la natura e la libertà.";
+$pageKeywords = "appartamento famiglia Piobbico, casa vacanze con giardino, alloggi gruppi Marche, vacanze piscina Monte Nerone, privacy relax";
 $currentPage = "appartamenti";
 include 'includes/header.php';
 ?>
