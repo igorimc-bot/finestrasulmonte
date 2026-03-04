@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Home - Oasi di Piobbico";
+$pageKeywords = "Oasi di Piobbico, vacanze Marche, Monte Nerone, agriturismo, relax, natura, trekking, piscina, casa vacanze";
 $currentPage = "home";
 include 'includes/header.php';
 ?>

@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Appartamento Vista Monte Nerone - Oasi di Piobbico";
+$pageKeywords = "residence con vista, appartamento vacanze Monte Nerone, affitto appartamento Piobbico, casa vacanze con piscina, relax Marche";
 $currentPage = "appartamenti";
 include 'includes/header.php';
 ?>

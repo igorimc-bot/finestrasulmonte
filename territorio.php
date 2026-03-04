@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Territorio e Attività - Oasi di Piobbico";
+$pageKeywords = "Monte Nerone, trekking Marche, ciclismo Monte Nerone, escursioni Piobbico, Castello Brancaleoni, enogastronomia Marche, tartufo bianco";
 $currentPage = "territorio";
 include 'includes/header.php';
 ?>

@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Termini d'Uso - Oasi di Piobbico";
+$pageKeywords = "termini d'uso Oasi di Piobbico, condizioni generali, regole sito web, affitto casa vacanze";
 $currentPage = "termini-uso";
 include 'includes/header.php';
 ?>

@@ -16,8 +16,7 @@
     ?>
     <title><?= $pageTitle ?? $defaultTitle ?></title>
     <meta name="description" content="<?= $pageDescription ?? $defaultDesc ?>">
-    <meta name="keywords"
-        content="Oasi di Piobbico, appartamenti Piobbico, vacanze Marche, Monte Nerone, agriturismo, relax, natura, trekking, piscina, casa vacanze">
+    <meta name="keywords" content="<?= $pageKeywords ?? 'Oasi di Piobbico, appartamenti Piobbico, vacanze Marche, Monte Nerone, agriturismo, relax, natura, trekking, piscina, casa vacanze' ?>">
     <meta name="author" content="Oasi di Piobbico">
     <link rel="canonical" href="<?= $currentUrl ?>">
 

@@ -1,5 +1,6 @@
 <?php
 $pageTitle = "Cookie Policy - Oasi di Piobbico";
+$pageKeywords = "cookie policy Oasi di Piobbico, informativa cookie, privacy, sito web appartamenti";
 $currentPage = "cookie-policy";
 include 'includes/header.php';
 ?>
