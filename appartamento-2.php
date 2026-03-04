@@ -6,7 +6,8 @@ include 'includes/header.php';
 
 <main>
     <section class="hero-small"
-        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('assets/img/piobbico_piscina.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('assets/img/piobbico_piscina.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);"
+        aria-label="Immagine di copertina - Piscina Oasi di Piobbico">
         <div class="reveal">
             <h1 style="font-size: 3rem;">Oasi di Piobbico</h1>
             <p style="font-size: 1.2rem; font-weight: 300;">Natura, piscina e vista sul Monte Nerone</p>
@@ -111,7 +112,7 @@ include 'includes/header.php';
                 <?php foreach ($galleryData as $id => $data): ?>
                     <?php foreach ($data['images'] as $img): ?>
                         <img src="assets/img/Oasi di Piobbico/<?php echo $img; ?>" alt="<?php echo $data['title']; ?>"
-                            class="gallery-item show" data-category="<?php echo $id; ?>"
+                            class="gallery-item show" data-category="<?php echo $id; ?>" width="400" height="250" loading="lazy"
                             style="width: 100%; border-radius: 5px; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.3s ease;"
                             onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'"
                             onclick="openLightbox(this.src)">
@@ -123,7 +124,7 @@ include 'includes/header.php';
             <div id="lightbox" onclick="if(event.target === this) closeLightbox()">
                 <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
                 <button class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
-                <img id="lightbox-img" src="">
+                <img id="lightbox-img" src="" alt="Immagine ingrandita">
                 <button class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</button>
             </div>
 

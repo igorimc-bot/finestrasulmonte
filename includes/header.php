@@ -4,22 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?? "Oasi di Piobbico" ?></title>
-    <meta name="description"
-        content="<?= $pageDescription ?? 'Appartamenti vacanze con vista sul Monte Nerone a Piobbico. Relax, natura e comfort per la tua vacanza ideale.' ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Fonts -->
+    <!-- Primary Meta Tags -->
+    <?php
+    $siteName = "Oasi di Piobbico";
+    $defaultTitle = "Oasi di Piobbico - Vacanze sul Monte Nerone";
+    $defaultDesc = "Appartamenti vacanze con vista sul Monte Nerone a Piobbico. Relax, natura e comfort per la tua vacanza ideale nelle Marche. Piscina, giardino e Wi-Fi.";
+    $currentUrl = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $ogImage = "https://" . $_SERVER['HTTP_HOST'] . "/assets/img/homepage_hero.jpeg";
+    ?>
+    <title><?= $pageTitle ?? $defaultTitle ?></title>
+    <meta name="description" content="<?= $pageDescription ?? $defaultDesc ?>">
+    <meta name="keywords"
+        content="Oasi di Piobbico, appartamenti Piobbico, vacanze Marche, Monte Nerone, agriturismo, relax, natura, trekking, piscina, casa vacanze">
+    <meta name="author" content="Oasi di Piobbico">
+    <link rel="canonical" href="<?= $currentUrl ?>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?= $currentUrl ?>">
+    <meta property="og:title" content="<?= $pageTitle ?? $defaultTitle ?>">
+    <meta property="og:description" content="<?= $pageDescription ?? $defaultDesc ?>">
+    <meta property="og:image" content="<?= $ogImage ?>">
+    <meta property="og:site_name" content="<?= $siteName ?>">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<?= $currentUrl ?>">
+    <meta property="twitter:title" content="<?= $pageTitle ?? $defaultTitle ?>">
+    <meta property="twitter:description" content="<?= $pageDescription ?? $defaultDesc ?>">
+    <meta property="twitter:image" content="<?= $ogImage ?>">
+
+    <!-- GEO & Schema.org (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Oasi di Piobbico",
+      "image": "<?= $ogImage ?>",
+      "description": "<?= $defaultDesc ?>",
+      "url": "https://<?php echo $_SERVER['HTTP_HOST']; ?>",
+      "telephone": "+393331234567",
+      "email": "info@oasidipiobbico.it",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Monte Nerone, 12",
+        "addressLocality": "Piobbico",
+        "postalCode": "61046",
+        "addressRegion": "PU",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.5855055,
+        "longitude": 12.4789505
+      },
+      "priceRange": "€€",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Swimming Pool",
+          "value": "True"
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Free Wi-Fi",
+          "value": "True"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Core Web Vitals & Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+    </noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 </head>
 
 <body>

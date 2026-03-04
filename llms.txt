@@ -1,0 +1,37 @@
+# Oasi di Piobbico - Documentazione tecnica per LLM (llms.txt)
+
+> **Progetto:** Oasi di Piobbico (Vacanze sul Monte Nerone)
+> **Contesto Tecnico:** PHP, HTML, CSS (Vanilla), JavaScript, JSON-LD
+> **Indirizzo:** Via Monte Nerone 12, 61046 Piobbico (PU), Marche, Italia
+
+## Panoramica
+**Oasi di Piobbico** offre affitti turistici di due appartamenti ("Residence con Vista" e "Oasi di Piobbico") situati ai piedi del Monte Nerone, nel comune di Piobbico.
+Il focus del sito è presentare i due appartamenti, evidenziarne le comodità (piscina, giardino, panorama) e promuovere il turismo attivo (ciclismo, trekking) e culturale/enogastronomico della zona.
+
+## Struttura del Sito
+Il sito è diviso nelle seguenti pagine principali, tutte gestite tramite server web locale/remoto che esegue PHP:
+- `index.php`: Pagina vetrina con focus su appartamenti e territorio.
+- `appartamenti.php`: Riepilogo che presenta i due appartamenti.
+- `appartamento-1.php`: Dettaglio del "Residence con Vista".
+- `appartamento-2.php`: Dettaglio dell'"Oasi di Piobbico".
+- `territorio.php`: Pagina dedicata alle attività outdoor (Monte Nerone, ciclismo, escursionismo), borghi (Piobbico, Urbino, Gubbio) ed enogastronomia.
+- `contatti.php`: Form di contatto standard.
+- `cookie-policy.php` & `termini-uso.php`: Pagine legali standard.
+
+## Architettura e Asset
+- **Includes**: Il codice ripetitivo come `<head>`, `<nav>` e `<footer>` sono incapsulati in `includes/header.php` ed `includes/footer.php`.
+- **Dati Strutturati**: Implementati nel tag `<head>` (`header.php`) un markup JSON-LD (Schema.org LodgingBusiness) e i meta-tag dell'Open Graph per una corretta ottimizzazione e localizzazione sui motori di ricerca.
+- **Gestione Consenso / Privacy**: È implementato un "Custom Cookie Banner" (tramite `assets/js/main.js` e `includes/footer.php`) che salva le preferenze degli utenti via LocalStorage.
+- **UI/UX**: Template custom che punta all'estetica rurale ma premium; palette di colori neutra e layout responsivo. CSS memorizzato in `assets/css/style.css`. La galleria fotografica impiega JavaScript custom per gestire una lightbox (`assets/js/main.js` + script in pagina per filtraggi).
+
+## Roadmap Ottimizzazioni Recenti
+Tutte le pagine sono state allineate al nuovo branding ("Oasi di Piobbico") eliminando e rinominando vecchie intestazioni storiche.
+- Preload dei caricamenti base (fonts).
+- Open Graph per Facebook / Twitter card.
+- Immagini principali hanno le tuple height/width definite staticamente e `loading="lazy"` a partire dalla viewport fold in giù per garantire eccellenti misurazioni core web vitals (CLS).
+
+## Dati di Contatto & Riferimenti Utili
+* E-mail: info@oasidipiobbico.it
+* Numero di Telefono: +39 333 1234567
+* Geo Lat/Long: 43.5855055, 12.4789505
+* Prenotazioni Esterne: Airbnb

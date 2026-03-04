@@ -6,7 +6,8 @@ include 'includes/header.php';
 
 <main>
     <section class="hero-small"
-        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/img/monte_nerone.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
+        style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/img/monte_nerone.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);"
+        aria-label="Immagine di copertina - Monte Nerone">
         <div class="reveal">
             <h1 style="font-size: 3rem;">Scopri il Monte Nerone</h1>
             <p style="font-size: 1.2rem; font-weight: 300;">Un paradiso per gli amanti della natura e dello sport</p>
@@ -42,7 +43,8 @@ include 'includes/header.php';
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
-                    <img src="assets/img/ciclismo.jpg" alt="Ciclismo sul Monte Nerone"
+                    <img src="assets/img/ciclismo.jpg" alt="Ciclismo sul Monte Nerone" width="600" height="200"
+                        loading="lazy"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
@@ -78,7 +80,8 @@ include 'includes/header.php';
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.1s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
-                    <img src="assets/img/monte nerone balza forata.jpg" alt="Trekking sul Monte Nerone"
+                    <img src="assets/img/monte nerone balza forata.jpg" alt="Trekking sul Monte Nerone" width="600"
+                        height="200" loading="lazy"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
@@ -116,6 +119,7 @@ include 'includes/header.php';
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.2s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
                     <img src="assets/img/Castello_Brancaleoni_Piobbico.jpg" alt="Castello Brancaleoni Piobbico"
+                        width="600" height="200" loading="lazy"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
@@ -152,7 +156,8 @@ include 'includes/header.php';
             <div class="reveal overflow-hidden"
                 style="background: var(--white); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); transition-delay: 0.3s; display: flex; flex-direction: column; transition: transform 0.3s ease;">
                 <div style="height: 200px; overflow: hidden;">
-                    <img src="assets/img/enogastronomia.jpg" alt="Enogastronomia Piobbico"
+                    <img src="assets/img/enogastronomia.jpg" alt="Enogastronomia Piobbico" width="600" height="200"
+                        loading="lazy"
                         style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
                         onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 </div>
@@ -191,7 +196,7 @@ include 'includes/header.php';
     <!-- Map Section -->
     <section style="height: 400px; background: #eee;">
         <!-- Placeholder for Map -->
-        <iframe
+        <iframe title="Mappa di Piobbico"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46077.53327668584!2d12.47895055!3d43.5855055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132cf0b0a8c4f0b7%3A0x4082c90e3e48c90!2s61046%20Piobbico%20PU!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>

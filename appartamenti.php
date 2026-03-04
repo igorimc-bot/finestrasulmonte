@@ -6,7 +6,8 @@ include 'includes/header.php';
 
 <main>
     <section class="hero-small"
-        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('assets/img/hero_monte_nerone.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);">
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('assets/img/hero_monte_nerone.jpg') center/cover no-repeat; height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--white);"
+        aria-label="Immagine di copertina - I Nostri Appartamenti">
         <div class="reveal">
             <h1 style="font-size: 3rem;">I Nostri Appartamenti</h1>
             <p style="font-size: 1.2rem; font-weight: 300;">Scegli la soluzione perfetta per le tue vacanze</p>
@@ -20,8 +21,8 @@ include 'includes/header.php';
             <div class="reveal"
                 style="background: var(--bg-light); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                 <div style="height: 300px; background-color: #ddd;">
-                    <img src="assets/img/residence_vista_piscina.jpg" alt="Appartamento 1"
-                        style="width: 100%; height: 100%; object-fit: cover;"
+                    <img src="assets/img/residence_vista_piscina.jpg" alt="Appartamento 1 - Residence con Vista"
+                        width="600" height="300" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;"
                         onerror="this.src='https://placehold.co/600x400?text=Appartamento+1'">
                 </div>
                 <div style="padding: 40px;">
@@ -46,8 +47,8 @@ include 'includes/header.php';
             <div class="reveal"
                 style="background: var(--bg-light); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition-delay: 0.2s;">
                 <div style="height: 300px; background-color: #ddd;">
-                    <img src="assets/img/piobbico_piscina.jpg" alt="Appartamento 2"
-                        style="width: 100%; height: 100%; object-fit: cover;"
+                    <img src="assets/img/piobbico_piscina.jpg" alt="Appartamento 2 - Oasi di Piobbico" width="600"
+                        height="300" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;"
                         onerror="this.src='https://placehold.co/600x400?text=Appartamento+2'">
                 </div>
                 <div style="padding: 40px;">
