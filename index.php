@@ -1,7 +1,7 @@
 <?php
-$pageTitle = "Oasi di Piobbico - Luxury Apartments & Nature at Monte Nerone";
-$pageDescription = "Sperimenta il relax assoluto all'Oasi di Piobbico. Esclusivi appartamenti con piscina, vista mozzafiato sul Monte Nerone e natura incontaminata nelle Marche.";
-$pageKeywords = "luxury apartments Marche, Oasi di Piobbico, vacanze Monte Nerone, affitto turistico Marche, casa vacanze con piscina, trekking Monte Nerone";
+$pageTitle = "Oasi di Piobbico - Appartamenti di Pregio e Natura sul Monte Nerone";
+$pageDescription = "Vivi il relax esclusivo all'Oasi di Piobbico. Splendidi appartamenti con piscina e vista mozzafiato sul Monte Nerone, per la tua vacanza perfetta nelle Marche.";
+$pageKeywords = "Oasi di Piobbico, appartamenti vacanza Marche, casa vacanze Monte Nerone, affitto turistico Piobbico, vacanza natura e piscina";
 $currentPage = "home";
 include 'includes/header.php';
 ?>
