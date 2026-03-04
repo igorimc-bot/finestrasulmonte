@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Termini d'Uso - Finestra sul monte";
+$pageTitle = "Termini d'Uso - Oasi di Piobbico";
 $currentPage = "termini-uso";
 include 'includes/header.php';
 ?>
@@ -27,7 +27,7 @@ include 'includes/header.php';
             <h2 style="color: var(--primary); margin-bottom: 30px; margin-top: 40px;">2. Licenza d'Uso</h2>
             <p style="margin-bottom: 20px; color: var(--text-muted); line-height: 1.8;">
                 È concesso il permesso di scaricare temporaneamente una copia dei materiali (informazioni o software)
-                sul sito web di Finestra sul monte solo per la visualizzazione transitoria personale e non commerciale.
+                sul sito web di Oasi di Piobbico solo per la visualizzazione transitoria personale e non commerciale.
                 Questa è la concessione di una licenza, non un trasferimento di titolo, e con questa licenza non è
                 possibile:
             </p>
@@ -37,7 +37,7 @@ include 'includes/header.php';
                 <li>usare i materiali per qualsiasi scopo commerciale, o per qualsiasi esposizione pubblica (commerciale
                     o non commerciale);</li>
                 <li>tentare di decompilare o invertire l'ingegneria di qualsiasi software contenuto nel sito web di
-                    Finestra sul monte;</li>
+                    Oasi di Piobbico;</li>
                 <li>rimuovere qualsiasi copyright o altre notazioni proprietarie dai materiali;</li>
                 <li>trasferire i materiali a un'altra persona o "rispecchiare" i materiali su qualsiasi altro server.
                 </li>
@@ -45,27 +45,27 @@ include 'includes/header.php';
 
             <h2 style="color: var(--primary); margin-bottom: 30px; margin-top: 40px;">3. Limitazioni</h2>
             <p style="margin-bottom: 20px; color: var(--text-muted); line-height: 1.8;">
-                In nessun caso Finestra sul monte o i suoi fornitori saranno responsabili per eventuali danni
+                In nessun caso Oasi di Piobbico o i suoi fornitori saranno responsabili per eventuali danni
                 (inclusi, senza limitazioni, danni per perdita di dati o profitti, o a causa di interruzione
                 dell'attività) derivanti dall'uso o dall'impossibilità di utilizzare i materiali sul sito web di
-                Finestra sul monte,
-                anche se Finestra sul monte o un rappresentante autorizzato di Finestra sul monte è stato informato
+                Oasi di Piobbico,
+                anche se Oasi di Piobbico o un rappresentante autorizzato di Oasi di Piobbico è stato informato
                 oralmente o per iscritto della possibilità di tali danni.
             </p>
 
             <h2 style="color: var(--primary); margin-bottom: 30px; margin-top: 40px;">4. Revisioni ed Errata</h2>
             <p style="margin-bottom: 20px; color: var(--text-muted); line-height: 1.8;">
-                I materiali che appaiono sul sito web di Finestra sul monte potrebbero includere errori fisici,
+                I materiali che appaiono sul sito web di Oasi di Piobbico potrebbero includere errori fisici,
                 tipografici o fotografici.
-                Finestra sul monte non garantisce che alcuno dei materiali sul suo sito web sia accurato, completo o
+                Oasi di Piobbico non garantisce che alcuno dei materiali sul suo sito web sia accurato, completo o
                 attuale.
-                Finestra sul monte può apportare modifiche ai materiali contenuti nel suo sito web in qualsiasi momento
+                Oasi di Piobbico può apportare modifiche ai materiali contenuti nel suo sito web in qualsiasi momento
                 senza preavviso.
             </p>
 
             <h2 style="color: var(--primary); margin-bottom: 30px; margin-top: 40px;">5. Legge Applicabile</h2>
             <p style="margin-bottom: 20px; color: var(--text-muted); line-height: 1.8;">
-                Qualsiasi reclamo relativo al sito web di Finestra sul monte sarà governato dalle leggi dello Stato
+                Qualsiasi reclamo relativo al sito web di Oasi di Piobbico sarà governato dalle leggi dello Stato
                 italiano senza riguardo
                 alle sue disposizioni sui conflitti di legge.
             </p>

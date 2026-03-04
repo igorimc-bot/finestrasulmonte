@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pageTitle ?? "Finestra sul monte - Piobbico" ?></title>
+    <title><?= $pageTitle ?? "Oasi di Piobbico" ?></title>
     <meta name="description"
         content="<?= $pageDescription ?? 'Appartamenti vacanze con vista sul Monte Nerone a Piobbico. Relax, natura e comfort per la tua vacanza ideale.' ?>">
 
@@ -27,7 +27,7 @@
     <header id="main-header">
         <nav>
             <div class="logo">
-                <a href="index.php">FINESTRA SUL MONTE</a>
+                <a href="index.php">OASI DI PIOBBICO</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.php" <?php if ($currentPage == 'home')

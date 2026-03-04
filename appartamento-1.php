@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Appartamento Vista Monte Nerone - Finestra sul monte";
+$pageTitle = "Appartamento Vista Monte Nerone - Oasi di Piobbico";
 $currentPage = "appartamenti";
 include 'includes/header.php';
 ?>

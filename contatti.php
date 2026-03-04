@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Contatti - Finestra sul monte";
+$pageTitle = "Contatti - Oasi di Piobbico";
 $currentPage = "contatti";
 include 'includes/header.php';
 ?>

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Cookie Policy - Finestra sul monte";
+$pageTitle = "Cookie Policy - Oasi di Piobbico";
 $currentPage = "cookie-policy";
 include 'includes/header.php';
 ?>

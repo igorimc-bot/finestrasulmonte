@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Oasi di Piobbico - Finestra sul monte";
+$pageTitle = "Oasi di Piobbico";
 $currentPage = "appartamenti";
 include 'includes/header.php';
 ?>
