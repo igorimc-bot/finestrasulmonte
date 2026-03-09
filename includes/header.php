@@ -102,8 +102,8 @@
   <link rel="stylesheet" href="assets/css/style.css?v=<?php echo time(); ?>">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="assets/img/apple-touch-icon.png">
 </head>
 
 <body>
