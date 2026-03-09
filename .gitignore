@@ -1,4 +1,4 @@
-/vendor/
+# /vendor/ (commentato per permettere il caricamento di PHPMailer su hosting senza composer)
 /.idea/
 /.vscode/
 /node_modules/

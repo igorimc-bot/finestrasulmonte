@@ -2,17 +2,25 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+$formSuccess = false;
+$formError = '';
+
+// Controlla il caricamento di Composer (evita Error 500 se vendor/autoload.php manca sul server di produzione)
+if (file_exists(__DIR__ . '/vendor/autoload.php')) {
+    require __DIR__ . '/vendor/autoload.php';
+} else {
+    // PHPMailer namespace sarà introvabile. Settiamo un finto formError iniziale per stoppare il post.
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $formError = 'Errore di sistema: libreria di invio email mancante sul server. Esegui "composer install" o carica la cartella vendor.';
+    }
+}
 
 $pageTitle = "Prenota la tua Vacanza - Contatti Oasi di Piobbico";
 $pageDescription = "Hai domande o vuoi prenotare? Contatta l'Oasi di Piobbico per ricevere un preventivo personalizzato e iniziare a pianificare il tuo soggiorno ai piedi del Monte Nerone.";
 $pageKeywords = "prenotazioni Oasi di Piobbico, contatti appartamenti Piobbico, assistenza clienti, vacanze Marche informazioni";
 $currentPage = "contatti";
 
-$formSuccess = false;
-$formError = '';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($formError)) {
     $name = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $phone = strip_tags(trim($_POST["phone"] ?? ''));
