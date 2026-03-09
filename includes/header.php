@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google-site-verification" content="nAHQE6nOxbNAFGYaw_5gNHSthGwRz6co4RjCD7bN1y0" />
 
   <?php if (isset($noIndex) && $noIndex): ?>
     <meta name="robots" content="noindex, nofollow">
