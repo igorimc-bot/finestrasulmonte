@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($formError)) {
     $message = trim($_POST["message"]);
     $privacy_accepted = isset($_POST["privacy"]) ? true : false;
 
-    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) || empty($message) || empty($phone) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $formError = "Per favore compila tutti i campi obbligatori in modo corretto.";
     } elseif (!$privacy_accepted) {
         $formError = "È necessario accettare la Privacy Policy e i Termini d'Uso per inviare il messaggio.";
@@ -163,7 +163,7 @@ include 'includes/header.php';
                         <div>
                             <label for="phone"
                                 style="display: block; margin-bottom: 8px; font-weight: 500;">Telefono</label>
-                            <input type="tel" id="phone" name="phone"
+                            <input type="tel" id="phone" name="phone" required
                                 style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
                         </div>
                     </div>
