@@ -25,9 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($formError)) {
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $phone = strip_tags(trim($_POST["phone"] ?? ''));
     $message = trim($_POST["message"]);
+    $privacy_accepted = isset($_POST["privacy"]) ? true : false;
 
     if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $formError = "Per favore compila tutti i campi obbligatori in modo corretto.";
+    } elseif (!$privacy_accepted) {
+        $formError = "È necessario accettare la Privacy Policy e i Termini d'Uso per inviare il messaggio.";
     } else {
         $mail = new PHPMailer(true);
 
@@ -170,6 +173,18 @@ include 'includes/header.php';
                             style="display: block; margin-bottom: 8px; font-weight: 500;">Messaggio</label>
                         <textarea id="message" name="message" rows="5" required
                             style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit; resize: vertical;"></textarea>
+                    </div>
+
+                    <div style="margin-bottom: 25px; display: flex; align-items: flex-start; gap: 10px;">
+                        <input type="checkbox" id="privacy" name="privacy" required style="margin-top: 5px;">
+                        <label for="privacy" style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+                            Dichiaro di aver letto l'<a href="privacy-policy.php" target="_blank"
+                                style="color: var(--accent); text-decoration: underline;">Informativa sulla Privacy</a>
+                            e i <a href="termini-uso.php" target="_blank"
+                                style="color: var(--accent); text-decoration: underline;">Termini d'Uso</a> e acconsento
+                            al trattamento dei miei dati personali ai sensi del Regolamento (UE) 2016/679 (GDPR) per la
+                            gestione della presente richiesta di contatto.
+                        </label>
                     </div>
 
                     <button type="submit" class="btn-cta"
