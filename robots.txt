@@ -1,9 +1,10 @@
 User-agent: *
 Disallow: /cookie-policy.php
 Disallow: /termini-uso.php
+Disallow: /privacy-policy.php
 
 # Allow indexing of all other pages
 Allow: /
 
 # Sitemap
-Sitemap: https://oasidipiobbico.it/sitemap.xml
+Sitemap:  

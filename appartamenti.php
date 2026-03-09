@@ -24,7 +24,8 @@ include 'includes/header.php';
                 style="background: var(--bg-light); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
                 <div style="height: 300px; background-color: #ddd;">
                     <img src="assets/img/residence_vista_piscina.jpg" alt="Appartamento 1 - Residence con Vista"
-                        width="600" height="300" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;"
+                        width="600" height="300" loading="lazy" decoding="async"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                         onerror="this.src='https://placehold.co/600x400?text=Appartamento+1'">
                 </div>
                 <div style="padding: 40px;">
@@ -50,7 +51,8 @@ include 'includes/header.php';
                 style="background: var(--bg-light); border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition-delay: 0.2s;">
                 <div style="height: 300px; background-color: #ddd;">
                     <img src="assets/img/piobbico_piscina.jpg" alt="Appartamento 2 - Oasi di Piobbico" width="600"
-                        height="300" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;"
+                        height="300" loading="lazy" decoding="async"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                         onerror="this.src='https://placehold.co/600x400?text=Appartamento+2'">
                 </div>
                 <div style="padding: 40px;">
