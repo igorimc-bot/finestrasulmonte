@@ -1,8 +1,75 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php';
+
 $pageTitle = "Prenota la tua Vacanza - Contatti Oasi di Piobbico";
 $pageDescription = "Hai domande o vuoi prenotare? Contatta l'Oasi di Piobbico per ricevere un preventivo personalizzato e iniziare a pianificare il tuo soggiorno ai piedi del Monte Nerone.";
 $pageKeywords = "prenotazioni Oasi di Piobbico, contatti appartamenti Piobbico, assistenza clienti, vacanze Marche informazioni";
 $currentPage = "contatti";
+
+$formSuccess = false;
+$formError = '';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = strip_tags(trim($_POST["phone"] ?? ''));
+    $message = trim($_POST["message"]);
+
+    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $formError = "Per favore compila tutti i campi obbligatori in modo corretto.";
+    } else {
+        $mail = new PHPMailer(true);
+
+        try {
+            // Server settings
+            $mail->isSMTP();
+            $mail->Host = 'authsmtp.securemail.pro';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'info@oasidipiobbico.it';
+            $mail->Password = 'ThIbCAjmV8';
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->Port = 465;
+
+            // Imposta encoding e lingua
+            $mail->CharSet = 'UTF-8';
+
+            // Mittente (deve essere l'account autenticato per evitare filtri antispam)
+            $mail->setFrom('info@oasidipiobbico.it', 'Oasi di Piobbico Website');
+            // Reply-to all'email del cliente
+            $mail->addReplyTo($email, $name);
+
+            // Destinatari
+            $mail->addAddress('info@oasidipiobbico.it');
+            $mail->addAddress('igorimc@gmail.com');
+
+            // Content
+            $mail->isHTML(true);
+            $mail->Subject = "Nuova richiesta di contatto da $name";
+
+            $mailBody = "
+            <h3>Nuovo messaggio dal sito web Oasi di Piobbico</h3>
+            <p><strong>Nome:</strong> {$name}</p>
+            <p><strong>Email:</strong> {$email}</p>
+            <p><strong>Telefono:</strong> {$phone}</p>
+            <br>
+            <p><strong>Messaggio:</strong></p>
+            <p>" . nl2br(htmlspecialchars($message)) . "</p>
+            ";
+
+            $mail->Body = $mailBody;
+            $mail->AltBody = strip_tags(str_replace('<br>', "\n", $mailBody));
+
+            $mail->send();
+            $formSuccess = true;
+        } catch (Exception $e) {
+            $formError = "C'è stato un problema nell'invio del messaggio. Riprova più tardi. (Errore: {$mail->ErrorInfo})";
+        }
+    }
+}
+
 include 'includes/header.php';
 ?>
 
@@ -51,7 +118,23 @@ include 'includes/header.php';
             <div
                 style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
                 <h2 style="color: var(--primary); margin-bottom: 30px;">Scrivici</h2>
-                <form action="#" method="POST">
+
+                <?php if ($formSuccess): ?>
+                    <div
+                        style="background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 25px; border: 1px solid #c3e6cb;">
+                        <strong>Grazie per averci contattato!</strong> Il tuo messaggio è stato inviato con successo. Ti
+                        risponderemo al più presto.
+                    </div>
+                <?php endif; ?>
+
+                <?php if (!empty($formError)): ?>
+                    <div
+                        style="background-color: #f8d7da; color: #721c24; padding: 15px; border-radius: 5px; margin-bottom: 25px; border: 1px solid #f5c6cb;">
+                        <strong>Errore:</strong> <?php echo $formError; ?>
+                    </div>
+                <?php endif; ?>
+
+                <form action="contatti.php" method="POST">
                     <div style="margin-bottom: 20px;">
                         <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">Nome e
                             Cognome</label>
