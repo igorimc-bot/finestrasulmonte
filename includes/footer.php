@@ -25,6 +25,7 @@
         <p>
             &copy; <?php echo date("Y"); ?> Oasi di Piobbico. Tutti i diritti riservati. |
             <a href="termini-uso.php" style="text-decoration: underline;">Termini d'Uso</a> |
+            <a href="privacy-policy.php" style="text-decoration: underline;">Privacy Policy</a> |
             <a href="cookie-policy.php" style="text-decoration: underline;">Cookie Policy</a> |
             <a href="#" onclick="document.getElementById('cookie-modal').style.display='flex'; return false;"
                 style="text-decoration: underline;">Preferenze Cookie</a>
