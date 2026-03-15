@@ -17,8 +17,7 @@
         <div class="footer-contact">
             <h4>Contattaci</h4>
             <p>Piobbico (PU), Marche, Italia</p>
-            <p>Email: info@oasidipiobbico.it</p>
-            <p>Tel: +39 333 1234567</p>
+            <p>61046 Piobbico (PU)</p>
         </div>
     </div>
     <div class="footer-bottom">

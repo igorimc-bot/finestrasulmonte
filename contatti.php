@@ -23,11 +23,10 @@ $currentPage = "contatti";
 if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($formError)) {
     $name = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $phone = strip_tags(trim($_POST["phone"] ?? ''));
     $message = trim($_POST["message"]);
     $privacy_accepted = isset($_POST["privacy"]) ? true : false;
 
-    if (empty($name) || empty($message) || empty($phone) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $formError = "Per favore compila tutti i campi obbligatori in modo corretto.";
     } elseif (!$privacy_accepted) {
         $formError = "È necessario accettare la Privacy Policy e i Termini d'Uso per inviare il messaggio.";
@@ -64,7 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && empty($formError)) {
             <h3>Nuovo messaggio dal sito web Oasi di Piobbico</h3>
             <p><strong>Nome:</strong> {$name}</p>
             <p><strong>Email:</strong> {$email}</p>
-            <p><strong>Telefono:</strong> {$phone}</p>
             <br>
             <p><strong>Messaggio:</strong></p>
             <p>" . nl2br(htmlspecialchars($message)) . "</p>
@@ -108,10 +106,6 @@ include 'includes/header.php';
                     <p>Via Monte Nerone, 12<br>61046 Piobbico (PU)</p>
                 </div>
                 <div style="margin-bottom: 20px;">
-                    <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 5px;">Telefono / WhatsApp</h3>
-                    <p><a href="tel:+393331234567" style="font-weight: 600;">+39 333 1234567</a></p>
-                </div>
-                <div style="margin-bottom: 20px;">
                     <h3 style="font-size: 1.1rem; color: var(--accent); margin-bottom: 5px;">Email</h3>
                     <p><a href="mailto:info@oasidipiobbico.it">info@oasidipiobbico.it</a></p>
                 </div>
@@ -153,19 +147,11 @@ include 'includes/header.php';
                             style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
                     </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
-                        <div>
-                            <label for="email"
-                                style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
-                            <input type="email" id="email" name="email" required
-                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
-                        </div>
-                        <div>
-                            <label for="phone"
-                                style="display: block; margin-bottom: 8px; font-weight: 500;">Telefono</label>
-                            <input type="tel" id="phone" name="phone" required
-                                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
-                        </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="email"
+                            style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
+                        <input type="email" id="email" name="email" required
+                            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;">
                     </div>
 
                     <div style="margin-bottom: 20px;">

@@ -53,7 +53,6 @@
       "image": "<?= $ogImage ?>",
       "description": "<?= $defaultDesc ?>",
       "url": "https://<?php echo $_SERVER['HTTP_HOST']; ?>",
-      "telephone": "+393331234567",
       "email": "info@oasidipiobbico.it",
       "address": {
         "@type": "PostalAddress",

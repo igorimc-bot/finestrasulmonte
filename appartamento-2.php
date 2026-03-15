@@ -222,11 +222,6 @@ include 'includes/header.php';
                 <a href="contatti.php" class="btn-cta"
                     style="display: block; text-align: center; margin-bottom: 15px;">Richiedi Disponibilità</a>
 
-                <div style="text-align: center; margin-top: 20px; font-size: 0.9rem;">
-                    <p>Oppure chiamaci:</p>
-                    <a href="tel:+393331234567" style="color: var(--accent); font-weight: bold; font-size: 1.1rem;">+39
-                        333 1234567</a>
-                </div>
 
                 <hr style="margin: 20px 0; opacity: 0.2;">
 

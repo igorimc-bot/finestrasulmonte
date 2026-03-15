@@ -29,7 +29,7 @@ include 'includes/header.php';
             <h2 style="color: var(--primary); margin-bottom: 30px; margin-top: 40px;">Tipologie di Dati raccolti</h2>
             <p style="margin-bottom: 20px; color: var(--text-muted); line-height: 1.8;">
                 Fra i Dati Personali raccolti da questo Sito Web, in modo autonomo o tramite terze parti, ci sono: Dati
-                di utilizzo; Strumenti di Tracciamento; nome; cognome; numero di telefono; email. Dettagli completi su
+                di utilizzo; Strumenti di Tracciamento; nome; cognome; email. Dettagli completi su
                 ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di questa privacy policy o
                 mediante specifici testi informativi visualizzati prima della raccolta dei dati stessi. I Dati Personali
                 possono essere liberamente forniti dall'Utente o, nel caso di Dati di Utilizzo, raccolti automaticamente
