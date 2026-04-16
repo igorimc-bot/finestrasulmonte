@@ -46,36 +46,43 @@ include 'includes/header.php';
             $galleryData = [
                 'salotto' => [
                     'title' => 'Salotto',
+                    'description' => 'Un ambiente accogliente e luminoso, ideale per il relax serale con TV e connessione Wi-Fi, arredato con un mix di comfort moderno e calore tradizionale.',
                     'amenities' => ['TV', 'Riscaldamento', 'Acqua calda', 'Arredi da esterni', 'Caffè', 'Calici da vino', 'Frigorifero', 'Freezer', 'Fornelli', 'Ferro da stiro', 'Estintore', 'Macchina del caffè', 'Wi-fi', 'Teglia da forno', 'Tavolo da pranzo', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine'],
                     'images' => ['salotto_1.avif', 'salotto_2.avif', 'salotto_3.avif']
                 ],
                 'zona_pranzo' => [
                     'title' => 'Zona Pranzo',
+                    'description' => 'Spazio funzionale e ben attrezzato per cene conviviali, con una cucina completa che permette di preparare ogni pasto gustando la vista sulla vallata.',
                     'amenities' => ['Calici da vino', 'Riscaldamento', 'Tavolo da pranzo', 'Acqua calda', 'Arredi da esterni', 'Caffè', 'Cucina', 'Essenziali', 'Estintore', 'Forno', 'Freezer', 'Fornelli', 'Frigorifero', 'Ingresso privato', 'Macchina del caffè', 'Prodotti per la pulizia', 'Rilevatore di monossido di carbonio', 'Servizi di base per cucinare', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Stendibiancheria per abiti', 'Teglia da forno', 'TV', 'Wi-fi', 'Piatti e posate'],
                     'images' => ['zona_pranzo_1.avif', 'zona_pranzo_2.avif', 'zona_pranzo_3.avif']
                 ],
                 'camera_1' => [
                     'title' => 'Camera da Letto 1',
+                    'description' => 'La suite padronale spaziosa e raffinata, un rifugio di pace con letto matrimoniale e biancheria curata per garantire sogni rigeneranti.',
                     'amenities' => ['Letto a 2 piazze', 'Biancheria da letto', 'Cuscini e coperte extra', 'Essenziali', 'Grucce', 'Riscaldamento', 'Arredi da esterni', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Wi-fi'],
                     'images' => ['camera_da_letto_1.avif', 'camera_da_letto_2.avif', 'camera_da_letto_3.avif']
                 ],
                 'camera_2' => [
                     'title' => 'Camera da Letto 2',
+                    'description' => 'Una camera doppia versatile e confortevole, perfetta per bambini o amici, dotata di ampi spazi per organizzare al meglio il proprio soggiorno.',
                     'amenities' => ['2 letti singoli', 'Biancheria da letto', 'Cuscini e coperte extra', 'Essenziali', 'Grucce', 'Riscaldamento', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Spazio per conservare l\'abbigliamento', 'Wi-fi'],
                     'images' => ['camera_da_letto2_1.avif', 'camera_da_letto2_2.avif', 'camera_da_letto2_3.avif']
                 ],
                 'bagno' => [
                     'title' => 'Bagno Completo',
+                    'description' => 'Ambiente moderno e funzionale dotato di ogni comfort, inclusa la lavatrice e un set completo di prodotti per la cura della persona.',
                     'amenities' => ['Acqua calda', 'Asciugacapelli', 'Bidet', 'Gel doccia', 'Riscaldamento', 'Prodotti per la pulizia', 'Essenziali', 'Lavatrice', 'Sapone per il corpo', 'Shampoo', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Stendibiancheria per abiti', 'Wi-fi'],
                     'images' => ['bagno_completo_1.avif', 'bagno_completo_2.avif']
                 ],
                 'esterni' => [
                     'title' => 'Esterni',
+                    'description' => 'Goditi la bellezza della natura marchigiana nel giardino privato, attrezzato con barbecue e zone relax ideali per vivere all\'aria aperta.',
                     'amenities' => ['Doccia all\'aperto', 'Griglia per barbecue', 'Lettini prendisole', 'Parcheggio gratuito nella proprietà', 'Piscina', 'Zona pranzo all\'aperto'],
                     'images' => ['esterni.avif', 'esterni_2.avif', 'esterni_3.avif', 'esterni_4.avif', 'esterni_5.avif', 'esterni_6.avif']
                 ],
                 'piscina' => [
                     'title' => 'Piscina',
+                    'description' => 'Rinfrescati nella splendida piscina con vista mozzafiato sul Monte Nerone, circondata da un solarium attrezzato con comodi lettini.',
                     'amenities' => ['Lettini prendisole', 'Parcheggio gratuito nella proprietà', 'Piscina', 'Doccia all\'aperto'],
                     'images' => ['piscina_1.avif', 'piscina_2.jpeg']
                 ]
@@ -97,7 +104,11 @@ include 'includes/header.php';
             <div id="gallery-descriptions">
                 <?php foreach ($galleryData as $id => $data): ?>
                     <div class="gallery-description" id="desc-<?php echo $id; ?>">
-                        <h4 style="margin-bottom: 15px; color: var(--accent);"><?php echo $data['title']; ?> - Servizi</h4>
+                        <h4 style="margin-bottom: 5px; color: var(--accent);"><?php echo $data['title']; ?></h4>
+                        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-main); margin-bottom: 20px; font-style: italic;">
+                            "<?php echo $data['description']; ?>"
+                        </p>
+                        <h5 style="margin-bottom: 10px; color: var(--primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Servizi inclusi:</h5>
                         <ul style="column-count: 2; column-gap: 40px; font-size: 0.95rem; color: var(--text-muted);">
                             <?php foreach ($data['amenities'] as $amenity): ?>
                                 <li style="margin-bottom: 5px;">• <?php echo $amenity; ?></li>

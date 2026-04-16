@@ -47,36 +47,43 @@ include 'includes/header.php';
             $galleryData = [
                 'salotto' => [
                     'title' => 'Salotto',
+                    'description' => 'Ampio e arioso, questo spazio living è il cuore pulsante della casa, pensato per momenti di condivisione e relax in un contesto autentico e accogliente.',
                     'amenities' => ['Riscaldamento', 'TV', 'Acqua calda', 'Caffè', 'Calici da vino', 'Cucina', 'Cucinino', 'Essenziali', 'Estintore', 'Fornelli', 'Forno', 'Freezer', 'Frigorifero', 'Ingresso privato', 'Macchina del caffè', 'Piatti e posate', 'Servizi di base per cucinare', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Tavolo da pranzo', 'Wi-fi', 'Rilevatore di monossido di carbonio', 'Asciugacapelli', 'Cuscini e coperte extra', 'Grucce'],
                     'images' => ['salotto_1.avif', 'salotto_2.avif', 'salotto_3.avif']
                 ],
                 'zona_pranzo' => [
                     'title' => 'Zona Pranzo',
+                    'description' => 'Una zona conviviale dove la tradizione rurale incontra la funzionalità, ideale per lunghe colazioni e cene tipiche a base di prodotti del territorio.',
                     'amenities' => ['Calici da vino', 'Riscaldamento', 'Tavolo da pranzo', 'Acqua calda', 'Arredi da esterni', 'Cucinino', 'Cucina', 'Estintore', 'Fornelli', 'Forno', 'Freezer', 'Frigorifero', 'Ingresso privato', 'Piatti e posate', 'Rilevatore di monossido di carbonio', 'Servizi di base per cucinare', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'TV', 'Wi-fi', 'Essenziali', 'Macchina del caffè', 'Prodotti per la pulizia'],
                     'images' => ['zona_pranzo_1.avif', 'zona_pranzo_2.jpeg', 'zona_pranzo_3.avif']
                 ],
                 'camera_1' => [
                     'title' => 'Camera da Letto 1',
+                    'description' => 'Stanza matrimoniale padronale di generose dimensioni, caratterizzata da un arredo sobrio e curato che invita al riposo più profondo.',
                     'amenities' => ['Letto a 2 piazze', 'Biancheria da letto', 'Cuscini e coperte extra', 'Essenziali', 'Grucce', 'Riscaldamento', 'Arredi da esterni', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Wi-fi', 'Spazio per conservare l\'abbigliamento'],
                     'images' => ['camera_da_letto_1.jpeg', 'camera_da_letto_1_2.jpeg', 'camera_da_letto_1_3.jpeg']
                 ],
                 'camera_2' => [
                     'title' => 'Camera da Letto 2',
+                    'description' => 'Un angolo di pace dedicato a chi cerca privacy e silenzio, ideale per ospiti singoli o ragazzi in cerca di un rifugio tutto per sé.',
                     'amenities' => ['Letto singolo', 'Biancheria da letto', 'Cuscini e coperte extra', 'Riscaldamento', 'Grucce', 'Wi-fi', 'Spazio per conservare l\'abbigliamento', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Parcheggio gratuito nella proprietà'],
                     'images' => ['camera_da_letto_2.avif', 'camera_da_letto_2_2.avif', 'camera_da_letto_2_3.avif']
                 ],
                 'bagno' => [
                     'title' => 'Bagno Completo',
+                    'description' => 'Spazio funzionale e completo di tutti i servizi essenziali, progettato per offrire massima comodità e praticità durante il vostro soggiorno.',
                     'amenities' => ['Acqua calda', 'Asciugacapelli', 'Gel doccia', 'Bidet', 'Prodotti per la pulizia', 'Riscaldamento', 'Essenziali', 'Lavatrice', 'Sapone per il corpo', 'Shampoo', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Wi-fi'],
                     'images' => ['bagno_completo_1.jpeg', 'bagno_completo_2.jpeg', 'bagno_completo_3.avif']
                 ],
                 'cortile' => [
                     'title' => 'Cortile',
+                    'description' => 'Un\'oasi privata all\'aperto arricchita da un braciere per serate suggestive sotto le stelle, perfetta per godersi il fresco della sera.',
                     'amenities' => ['Doccia all\'aperto', 'Zona pranzo all\'aperto', 'Lettini prendisole', 'Braciere', 'Parcheggio gratuito nella proprietà', 'Piscina', 'Sono permessi soggiorni a lungo termine'],
                     'images' => ['cortile.avif', 'cortile_2.avif']
                 ],
                 'esterni' => [
                     'title' => 'Esterni',
+                    'description' => 'Vasti spazi verdi e una splendida piscina circondano la struttura, offrendo libertà totale e la possibilità di vivere appieno la bellezza del paesaggio.',
                     'amenities' => ['Parcheggio gratuito nella proprietà', 'Sono permessi soggiorni a lungo termine', 'Piscina', 'Lettini prendisole', 'Doccia all\'aperto'],
                     'images' => ['esterni.avif', 'esterni_2.webp', 'esterni_3.avif', 'esterni_4.avif', 'esterni_5.jpeg', 'esterni_6.jpeg']
                 ]
@@ -98,7 +105,11 @@ include 'includes/header.php';
             <div id="gallery-descriptions">
                 <?php foreach ($galleryData as $id => $data): ?>
                     <div class="gallery-description" id="desc-<?php echo $id; ?>">
-                        <h4 style="margin-bottom: 15px; color: var(--accent);"><?php echo $data['title']; ?> - Servizi</h4>
+                        <h4 style="margin-bottom: 5px; color: var(--accent);"><?php echo $data['title']; ?></h4>
+                        <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-main); margin-bottom: 20px; font-style: italic;">
+                            "<?php echo $data['description']; ?>"
+                        </p>
+                        <h5 style="margin-bottom: 10px; color: var(--primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Servizi inclusi:</h5>
                         <ul style="column-count: 2; column-gap: 40px; font-size: 0.95rem; color: var(--text-muted);">
                             <?php foreach ($data['amenities'] as $amenity): ?>
                                 <li style="margin-bottom: 5px;">• <?php echo $amenity; ?></li>
