@@ -47,7 +47,7 @@ include 'includes/header.php';
                 'salotto' => [
                     'title' => 'Salotto',
                     'amenities' => ['TV', 'Riscaldamento', 'Acqua calda', 'Arredi da esterni', 'Caffè', 'Calici da vino', 'Frigorifero', 'Freezer', 'Fornelli', 'Ferro da stiro', 'Estintore', 'Macchina del caffè', 'Wi-fi', 'Teglia da forno', 'Tavolo da pranzo', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine'],
-                    'images' => ['salotto_1.avif', 'salotto_2.avif', 'salotto_3.avif', 'salotto_4.avif', 'salotto_5.avif']
+                    'images' => ['salotto_1.avif', 'salotto_2.avif', 'salotto_3.avif']
                 ],
                 'zona_pranzo' => [
                     'title' => 'Zona Pranzo',
@@ -57,7 +57,7 @@ include 'includes/header.php';
                 'camera_1' => [
                     'title' => 'Camera da Letto 1',
                     'amenities' => ['Letto a 2 piazze', 'Biancheria da letto', 'Cuscini e coperte extra', 'Essenziali', 'Grucce', 'Riscaldamento', 'Arredi da esterni', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Wi-fi'],
-                    'images' => ['camera_da_letto_1.avif', 'camera_da_letto_2.avif', 'camera_da_letto_3.avif', 'camera_da_letto_4.avif']
+                    'images' => ['camera_da_letto_1.avif', 'camera_da_letto_2.avif', 'camera_da_letto_3.avif']
                 ],
                 'camera_2' => [
                     'title' => 'Camera da Letto 2',
