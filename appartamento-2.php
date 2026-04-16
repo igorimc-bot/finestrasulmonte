@@ -55,25 +55,25 @@ include 'includes/header.php';
                     'title' => 'Zona Pranzo',
                     'description' => 'Una zona conviviale dove la tradizione rurale incontra la funzionalità, ideale per lunghe colazioni e cene tipiche a base di prodotti del territorio.',
                     'amenities' => ['Calici da vino', 'Riscaldamento', 'Tavolo da pranzo', 'Acqua calda', 'Arredi da esterni', 'Cucinino', 'Cucina', 'Estintore', 'Fornelli', 'Forno', 'Freezer', 'Frigorifero', 'Ingresso privato', 'Piatti e posate', 'Rilevatore di monossido di carbonio', 'Servizi di base per cucinare', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'TV', 'Wi-fi', 'Essenziali', 'Macchina del caffè', 'Prodotti per la pulizia'],
-                    'images' => ['zona_pranzo_1.avif', 'zona_pranzo_2.jpeg', 'zona_pranzo_3.avif']
+                    'images' => ['zona_pranzo_1.avif', 'zona_pranzo_2.avif', 'zona_pranzo_3.avif']
                 ],
                 'camera_1' => [
                     'title' => 'Camera da Letto 1',
                     'description' => 'Stanza matrimoniale padronale di generose dimensioni, caratterizzata da un arredo sobrio e curato che invita al riposo più profondo.',
                     'amenities' => ['Letto a 2 piazze', 'Biancheria da letto', 'Cuscini e coperte extra', 'Essenziali', 'Grucce', 'Riscaldamento', 'Arredi da esterni', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Wi-fi', 'Spazio per conservare l\'abbigliamento'],
-                    'images' => ['camera_da_letto_1.jpeg', 'camera_da_letto_1_2.jpeg', 'camera_da_letto_1_3.jpeg']
+                    'images' => ['camera_da_letto_1_1.avif', 'camera_da_letto_1_2.avif', 'camera_da_letto_1_3.avif']
                 ],
                 'camera_2' => [
                     'title' => 'Camera da Letto 2',
                     'description' => 'Un angolo di pace dedicato a chi cerca privacy e silenzio, ideale per ospiti singoli o ragazzi in cerca di un rifugio tutto per sé.',
                     'amenities' => ['Letto singolo', 'Biancheria da letto', 'Cuscini e coperte extra', 'Riscaldamento', 'Grucce', 'Wi-fi', 'Spazio per conservare l\'abbigliamento', 'Sono permessi soggiorni a lungo termine', 'Soggiorno privato', 'Parcheggio gratuito nella proprietà'],
-                    'images' => ['camera_da_letto_2.avif', 'camera_da_letto_2_2.avif', 'camera_da_letto_2_3.avif']
+                    'images' => ['camera_da_letto_2_1.jpeg', 'camera_da_letto_2_2.avif', 'camera_da_letto_2_3.avif']
                 ],
                 'bagno' => [
                     'title' => 'Bagno Completo',
                     'description' => 'Spazio funzionale e completo di tutti i servizi essenziali, progettato per offrire massima comodità e praticità durante il vostro soggiorno.',
                     'amenities' => ['Acqua calda', 'Asciugacapelli', 'Gel doccia', 'Bidet', 'Prodotti per la pulizia', 'Riscaldamento', 'Essenziali', 'Lavatrice', 'Sapone per il corpo', 'Shampoo', 'Soggiorno privato', 'Sono permessi soggiorni a lungo termine', 'Wi-fi'],
-                    'images' => ['bagno_completo_1.jpeg', 'bagno_completo_2.jpeg', 'bagno_completo_3.avif']
+                    'images' => ['bagno_completo_1.jpeg', 'bagno_completo_2.avif']
                 ],
                 'cortile' => [
                     'title' => 'Cortile',
